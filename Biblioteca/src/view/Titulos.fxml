@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="949.0" style="-fx-background-color: #f8f8f8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TitulosController">
+   <children>
+      <Text layoutX="275.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TÍTULOS" textAlignment="CENTER" underline="true" wrappingWidth="399.3896484375">
+         <font>
+            <Font name="Droid Sans Fallback" size="60.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.49444444444444446" centerY="0.5333333333333333" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5402684563758386">
+                     <color>
+                        <Color red="0.6078431606292725" green="0.30980393290519714" blue="0.5882353186607361" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7281879194630873">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="139.0" fitWidth="138.0" layoutX="797.0" layoutY="522.0">
+         <image>
+            <Image url="@../img/coracao.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="93.0" layoutX="-1.0" layoutY="588.0">
+         <image>
+            <Image url="@../img/hand.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnInicio" layoutX="84.0" layoutY="620.0" mnemonicParsing="false" onAction="#btnVoltarInicio" style="-fx-background-color: #d40272;" text="Início" textFill="#ffffffed">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="48.0" layoutY="179.0" prefHeight="317.0" prefWidth="282.0" style="-fx-border-color: grey;">
+         <children>
+            <Text layoutX="8.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Título:" wrappingWidth="45.859375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="titulo" layoutX="98.0" layoutY="11.0" promptText="Título">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Text layoutX="9.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editora:" wrappingWidth="58.859375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="editora" layoutX="98.0" layoutY="45.0" promptText="Editora">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Text layoutX="10.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor:" wrappingWidth="45.859375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="autor" layoutX="98.0" layoutY="80.0" promptText="Autor">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Text layoutX="10.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano:" wrappingWidth="36.859375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ano" layoutX="98.0" layoutY="117.0" promptText="Ano">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Text layoutX="10.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição:" wrappingWidth="79.02001953125">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="descricao" layoutX="98.0" layoutY="153.0" promptText="Descrição">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Text layoutX="9.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade:" wrappingWidth="86.859375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="quantidade" layoutX="98.0" layoutY="187.0" promptText="Quantidade">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="btnAdicionar" layoutX="18.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnAdicionarUsuario" style="-fx-background-color: #d40272;" text="Adicionar" textFill="white">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnAtualizar" layoutX="113.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnAtualizarUsuario" style="-fx-background-color: #9b4f96;" text="Atualizar" textFill="white">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnDeletar" layoutX="208.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnDeletarUsuario" style="-fx-background-color: #0037a6;" text="Deletar" textFill="white">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+      <TableView fx:id="tableTitulos" layoutX="340.0" layoutY="179.0" prefHeight="317.0" prefWidth="577.0" style="-fx-background-color: #f8f8f8; -fx-border-color: grey;">
+        <columns>
+            <TableColumn fx:id="colunaId" prefWidth="30.0" text="id" />
+          <TableColumn fx:id="colunaTitulo" prefWidth="82.0" text="Título" />
+          <TableColumn fx:id="colunaEditora" prefWidth="59.0" text="Editora" />
+            <TableColumn fx:id="colunaAutor" minWidth="0.0" prefWidth="138.0" text="Autor" />
+            <TableColumn fx:id="colunaAno" prefWidth="41.0" text="Ano" />
+            <TableColumn fx:id="colunaDescricao" prefWidth="186.0" text="Descrição" />
+            <TableColumn fx:id="colunaQuantidade" prefWidth="39.0" text="Qtd" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

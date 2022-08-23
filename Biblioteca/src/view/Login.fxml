@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="949.0" style="-fx-background-color: #f8f8f8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Text layoutX="151.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIBLIOTECA DA NASTHYA" textAlignment="CENTER" underline="true" wrappingWidth="649.5448608398438">
+         <font>
+            <Font name="Mallanna" size="70.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.49444444444444446" centerY="0.5333333333333333" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5402684563758386">
+                     <color>
+                        <Color red="0.6078431606292725" green="0.30980393290519714" blue="0.5882353186607361" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7281879194630873">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="139.0" fitWidth="138.0" layoutX="797.0" layoutY="522.0">
+         <image>
+            <Image url="@../img/coracao.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="199.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login:" textAlignment="CENTER" wrappingWidth="149.0">
+         <font>
+            <Font name="Mallanna" size="70.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.49444444444444446" centerY="0.5333333333333333" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5402684563758386">
+                     <color>
+                        <Color red="0.6078431606292725" green="0.30980393290519714" blue="0.5882353186607361" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7281879194630873">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="187.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:" textAlignment="CENTER" wrappingWidth="173.54486083984375">
+         <font>
+            <Font name="Mallanna" size="70.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.49444444444444446" centerY="0.5333333333333333" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5402684563758386">
+                     <color>
+                        <Color red="0.6078431606292725" green="0.30980393290519714" blue="0.5882353186607361" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7281879194630873">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <TextField fx:id="email" layoutX="392.0" layoutY="262.0" prefHeight="77.0" prefWidth="373.0" promptText="email@dominio.com">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="senha" layoutX="392.0" layoutY="362.0" prefHeight="77.0" prefWidth="373.0" promptText="senha">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="login" layoutX="599.0" layoutY="473.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="55.0" prefWidth="166.0" style="-fx-background-color: #d40272;" text="Entrar" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="mensagemLogin" alignment="CENTER" layoutX="199.0" layoutY="473.0" prefHeight="55.0" prefWidth="401.0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
