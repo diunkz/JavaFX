@@ -74,7 +74,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <TextField fx:id="titulo" layoutX="98.0" layoutY="11.0" promptText="Título">
+            <TextField fx:id="tituloTitulo" layoutX="98.0" layoutY="11.0" promptText="Título">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></TextField>
@@ -83,7 +83,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <TextField fx:id="editora" layoutX="98.0" layoutY="45.0" promptText="Editora">
+            <TextField fx:id="editoraTitulo" layoutX="98.0" layoutY="45.0" promptText="Editora">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></TextField>
@@ -92,7 +92,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <TextField fx:id="autor" layoutX="98.0" layoutY="80.0" promptText="Autor">
+            <TextField fx:id="autorTitulo" layoutX="98.0" layoutY="80.0" promptText="Autor">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></TextField>
@@ -101,7 +101,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <TextField fx:id="ano" layoutX="98.0" layoutY="117.0" promptText="Ano">
+            <TextField fx:id="anoTitulo" layoutX="98.0" layoutY="117.0" promptText="Ano">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></TextField>
@@ -110,7 +110,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <TextField fx:id="descricao" layoutX="98.0" layoutY="153.0" promptText="Descrição">
+            <TextField fx:id="descricaoTitulo" layoutX="98.0" layoutY="153.0" promptText="Descrição">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
@@ -120,20 +120,20 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <TextField fx:id="quantidade" layoutX="98.0" layoutY="187.0" promptText="Quantidade">
+            <TextField fx:id="quantidadeTitulo" layoutX="98.0" layoutY="187.0" promptText="Quantidade">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <Button fx:id="btnAdicionar" layoutX="18.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnAdicionarUsuario" style="-fx-background-color: #d40272;" text="Adicionar" textFill="white">
+            <Button fx:id="btnAdicionar" layoutX="18.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnAdicionarTitulo" style="-fx-background-color: #d40272;" text="Adicionar" textFill="white">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="btnAtualizar" layoutX="113.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnAtualizarUsuario" style="-fx-background-color: #9b4f96;" text="Atualizar" textFill="white">
+            <Button fx:id="btnAtualizar" layoutX="113.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnAtualizarTitulo" style="-fx-background-color: #9b4f96;" text="Atualizar" textFill="white">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="btnDeletar" layoutX="208.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnDeletarUsuario" style="-fx-background-color: #0037a6;" text="Deletar" textFill="white">
+            <Button fx:id="btnDeletar" layoutX="208.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnDeletarTitulo" style="-fx-background-color: #0037a6;" text="Deletar" textFill="white">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>

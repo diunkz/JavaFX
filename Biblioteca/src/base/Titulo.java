@@ -1,17 +1,19 @@
 package base;
 
 public class Titulo {
+	Integer id;
 	String titulo;
 	String editora;
 	String autor;
-	Integer ano;
+	String ano;
 	String descricao;
 	Integer quantidade;
 
 	public Titulo() {
 	}
 
-	public Titulo(String titulo, String editora, String autor, Integer ano, String descricao, Integer quantidade) {
+	public Titulo(Integer id, String titulo, String editora, String autor, String ano, String descricao, Integer quantidade) {
+		this.id = id;
 		this.titulo = titulo;
 		this.editora = editora;
 		this.autor = autor;
@@ -19,6 +21,25 @@ public class Titulo {
 		this.descricao = descricao;
 		this.quantidade = quantidade;
 		
+	}
+	
+	public Titulo(String titulo, String editora, String autor, String ano, String descricao, Integer quantidade) {
+		this.id = 0;
+		this.titulo = titulo;
+		this.editora = editora;
+		this.autor = autor;
+		this.ano = ano;
+		this.descricao = descricao;
+		this.quantidade = quantidade;
+		
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getTitulo() {
@@ -45,11 +66,11 @@ public class Titulo {
 		this.autor = autor;
 	}
 
-	public Integer getAno() {
+	public String getAno() {
 		return this.ano;
 	}
 
-	public void setAno(Integer ano) {
+	public void setAno(String ano) {
 		this.ano = ano;
 	}
 

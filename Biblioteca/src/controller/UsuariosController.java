@@ -102,7 +102,36 @@ public class UsuariosController implements Initializable{
 
     @FXML
     void btnAtualizarUsuario(ActionEvent event) {
-
+    	String nome, cpf, matricula, curso;
+    	int myIndex =  tableUsuarios.getSelectionModel().getSelectedIndex();
+		int id = Integer.parseInt(String.valueOf(tableUsuarios.getItems().get(myIndex).getId()));
+		
+    	nome = nomeUsuario.getText();
+    	cpf = cpfUsuario.getText();
+    	matricula = matriculaUsuario.getText();
+    	curso = cursoUsuario.getText();
+    	
+		try {
+    		PreparedStatement pst = BancoDeDados.getConexao().prepareStatement("update usuarios set nome = ?, cpf = ?, matricula = ?, curso = ? where id = ?");
+    		pst.setString(1,  nome);
+    		pst.setString(2,  cpf);
+    		pst.setString(3,  matricula);
+    		pst.setString(4,  curso);
+    		pst.setInt(5, id);
+    		pst.executeUpdate();
+    		
+    		Alert alert = new Alert(Alert.AlertType.INFORMATION);
+			alert.setTitle("Atualização de usuário");
+			alert.setHeaderText("Tudo certo!");
+			alert.setContentText("Atualização bem sucedida.");
+			
+			alert.showAndWait();
+			BancoDeDados.atualizarIDs();
+			limparCampos();
+			usuariosTable();
+		} catch(SQLException ex) {
+    		Logger.getLogger(UsuariosController.class.getName()).log(Level.SEVERE, null, ex);
+    	}
     }
 
     @FXML
@@ -141,6 +170,7 @@ public class UsuariosController implements Initializable{
 		matriculaUsuario.setText("");
 		cursoUsuario.setText("");
     }
+    
     public void usuariosTable() {
     	ObservableList<Usuario> usuarios = FXCollections.observableArrayList();
     	try {
@@ -182,12 +212,8 @@ public class UsuariosController implements Initializable{
     	});
     }
     
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-    	//Banco de dados interno precisa estar conectado
-    	BancoDeDados bd = new BancoDeDados("admbiblioteca", "Biblioteca123");
-    	bd.conecta();
     	usuariosTable();
     }
 

@@ -56,6 +56,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);    	
-        UsuariosController cd = new UsuariosController();
+        new UsuariosController();
+        new TitulosController();
     }
 }
