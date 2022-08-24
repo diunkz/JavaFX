@@ -25,18 +25,20 @@ public class MainMenuController implements Initializable {
 
     @FXML
     void btnEmprestimoeDevolucao(ActionEvent event) {
-
+    	Main.changeScreen("emprestimodevolucao");
+    	System.out.println("Empréstimo e Devolução Scene Activated!");
     }
 
     @FXML
     void btnGerenciarTitulos(ActionEvent event) {
     	Main.changeScreen("titulos");
-    	System.out.println("Titulos Scene Activated!");
+    	System.out.println("Títulos Scene Activated!");
     }
 
     @FXML
     void btnRelatorios(ActionEvent event) {
-
+    	Main.changeScreen("relatorios");
+    	System.out.println("Relatórios Scene Activated!");
     }
 
     @FXML

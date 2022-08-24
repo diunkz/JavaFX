@@ -15,6 +15,8 @@ public class Main extends Application {
 	private static Scene MainMenu;
 	private static Scene Usuarios;
 	private static Scene Titulos;
+	private static Scene EmprestimoEDevolucao;
+	private static Scene Relatorios;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -32,9 +34,13 @@ public class Main extends Application {
         Parent fxmlTitulos = FXMLLoader.load(getClass().getResource("../view/Titulos.fxml"));
         Titulos = new Scene(fxmlTitulos);
         
+        Parent fxmlEmprestimoEDevolucao = FXMLLoader.load(getClass().getResource("../view/EmprestimoEDevolucao.fxml"));
+        EmprestimoEDevolucao = new Scene(fxmlEmprestimoEDevolucao);
         
+        Parent fxmlRelatorios = FXMLLoader.load(getClass().getResource("../view/Relatorios.fxml"));
+        Relatorios = new Scene(fxmlRelatorios);
 
-//        primaryStage.initStyle(StageStyle.UNDECORATED)
+//      primaryStage.initStyle(StageStyle.UNDECORATED)
         primaryStage.setScene(Login);
         primaryStage.show();
     	
@@ -50,6 +56,12 @@ public class Main extends Application {
 	    		break;
 	    	case "titulos":
 	    		stage.setScene(Titulos);
+	    		break;
+	    	case "emprestimodevolucao":
+	    		stage.setScene(EmprestimoEDevolucao);
+	    		break;
+	    	case "relatorios":
+	    		stage.setScene(Relatorios);
 	    		break;
     	}
     }

@@ -91,7 +91,7 @@ public class UsuariosController implements Initializable{
 			
 			alert.showAndWait();
 			
-			BancoDeDados.atualizarIDs();
+			BancoDeDados.atualizarIDsUsuario();
 			limparCampos();
 			usuariosTable();
     	}catch (SQLException ex) {
@@ -126,7 +126,7 @@ public class UsuariosController implements Initializable{
 			alert.setContentText("Atualização bem sucedida.");
 			
 			alert.showAndWait();
-			BancoDeDados.atualizarIDs();
+			BancoDeDados.atualizarIDsUsuario();
 			limparCampos();
 			usuariosTable();
 		} catch(SQLException ex) {
@@ -150,7 +150,7 @@ public class UsuariosController implements Initializable{
 			alert.setContentText("Remoção bem sucedida.");
 			
 			alert.showAndWait();
-			BancoDeDados.atualizarIDs();
+			BancoDeDados.atualizarIDsUsuario();
 			limparCampos();
 			usuariosTable();
 		} catch(SQLException ex) {

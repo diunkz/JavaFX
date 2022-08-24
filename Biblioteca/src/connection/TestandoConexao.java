@@ -26,7 +26,7 @@ public class TestandoConexao {
 		TestandoConexao x = new TestandoConexao();
 		x.verificarLogin();
 		System.out.println(BancoDeDados.getConexao());
-		BancoDeDados.atualizarIDs();
+//		BancoDeDados.atualizarIDsUsuario();
 //		BancoDeDados.adicionaTeste();
 		BancoDeDados.adicionarUsuario(user);
 	}

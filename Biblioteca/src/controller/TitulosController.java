@@ -109,7 +109,7 @@ public class TitulosController implements Initializable{
 			
 			alert.showAndWait();
 			
-			BancoDeDados.atualizarIDs();
+			BancoDeDados.atualizarIDsTitulos();
 			limparCampos();
 			titulosTable();
     	}catch (SQLException ex) {
@@ -148,7 +148,7 @@ public class TitulosController implements Initializable{
 			alert.setContentText("Atualização bem sucedida.");
 			
 			alert.showAndWait();
-			BancoDeDados.atualizarIDs();
+			BancoDeDados.atualizarIDsTitulos();
 			limparCampos();
 			titulosTable();
 		} catch(SQLException ex) {
@@ -172,7 +172,7 @@ public class TitulosController implements Initializable{
 			alert.setContentText("Remoção bem sucedida.");
 			
 			alert.showAndWait();
-			BancoDeDados.atualizarIDs();
+			BancoDeDados.atualizarIDsTitulos();
 			limparCampos();
 			titulosTable();
 		} catch(SQLException ex) {

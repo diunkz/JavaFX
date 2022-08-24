@@ -40,11 +40,20 @@ public class BancoDeDados {
 		return BancoDeDados.conexao;
 	}
 	
-	public static void atualizarIDs() {
+	public static void atualizarIDsUsuario() {
 		try {
 			Statement st = getConexao().createStatement();
 			st.executeUpdate("SET @count = 0;");
 			st.executeUpdate("UPDATE `usuarios` SET `usuarios`.`id` = @count:= @count + 1;");			
+		}catch (SQLException e) {
+		}
+	}
+	
+	public static void atualizarIDsTitulos() {
+		try {
+			Statement st = getConexao().createStatement();
+			st.executeUpdate("SET @count = 0;");
+			st.executeUpdate("UPDATE `titulos` SET `titulos`.`id` = @count:= @count + 1;");			
 		}catch (SQLException e) {
 		}
 	}

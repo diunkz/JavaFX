@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="949.0" style="-fx-background-color: #f8f8f8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RelatoriosController">
+   <children>
+      <Text layoutX="275.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RELATÓRIOS" textAlignment="CENTER" underline="true" wrappingWidth="399.3896484375">
+         <font>
+            <Font name="Droid Sans Fallback" size="60.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.49444444444444446" centerY="0.5333333333333333" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="0.21666666865348816" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5402684563758386">
+                     <color>
+                        <Color red="0.6078431606292725" green="0.30980393290519714" blue="0.5882353186607361" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7281879194630873">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8299999833106995" green="0.008299999870359898" blue="0.4465399980545044" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="849.0" layoutY="575.0">
+         <image>
+            <Image url="@../img/coracao.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="93.0" layoutX="-1.0" layoutY="588.0">
+         <image>
+            <Image url="@../img/hand.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnInicio" layoutX="84.0" layoutY="620.0" mnemonicParsing="false" onAction="#btnVoltarInicio" style="-fx-background-color: #d40272;" text="Início" textFill="#ffffffed">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#d40272" layoutX="33.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USUÁRIOS:" textAlignment="CENTER" wrappingWidth="93.00000000000006">
+         <font>
+            <Font name="Droid Sans Fallback" size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableUsuarios" layoutX="35.0" layoutY="123.0" prefHeight="133.0" prefWidth="880.0" style="-fx-border-color: #d40272;">
+        <columns>
+            <TableColumn fx:id="colunaIdUsuarios" prefWidth="35.0" text="id" />
+          <TableColumn fx:id="colunaNome" prefWidth="370.0" text="Nome" />
+          <TableColumn fx:id="colunaCpf" prefWidth="120.0" text="CPF" />
+            <TableColumn fx:id="colunaMatricula" minWidth="0.0" prefWidth="119.0" text="Matrícula" />
+            <TableColumn fx:id="colunaCurso" prefWidth="231.0" text="Curso" />
+        </columns>
+      </TableView>
+      <Text fill="#9b4f96" layoutX="33.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TÍTULOS:" textAlignment="CENTER" wrappingWidth="74.3896484375">
+         <font>
+            <Font name="Droid Sans Fallback" size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableTitulos" layoutX="35.0" layoutY="283.0" prefHeight="133.0" prefWidth="880.0" style="-fx-border-color: #9b4f96;">
+         <columns>
+            <TableColumn fx:id="colunaIdTitulos" prefWidth="30.0" text="id" />
+            <TableColumn fx:id="colunaTitulo" prefWidth="182.0" text="Título" />
+            <TableColumn fx:id="colunaEditora" prefWidth="127.0" text="Editora" />
+            <TableColumn fx:id="colunaAutor" minWidth="0.0" prefWidth="128.0" text="Autor" />
+            <TableColumn fx:id="colunaAno" prefWidth="50.0" text="Ano" />
+            <TableColumn fx:id="colunaDescricao" prefWidth="305.0" text="Descrição" />
+            <TableColumn fx:id="colunaQuantidade" prefWidth="54.0" text="Qtd" />
+         </columns>
+      </TableView>
+      <Text fill="#0037a6" layoutX="35.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPRÉSTIMOS:" textAlignment="CENTER" wrappingWidth="124.3896484375">
+         <font>
+            <Font name="Droid Sans Fallback" size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableEmprestimos" layoutX="35.0" layoutY="445.0" prefHeight="133.0" prefWidth="880.0" style="-fx-border-color: #0037a6;">
+         <columns>
+            <TableColumn fx:id="colunaIdEmprestimos" prefWidth="30.0" text="id" />
+            <TableColumn fx:id="colunaNomeEmprestimos" prefWidth="338.0" text="Nome" />
+            <TableColumn fx:id="colunacoCpfEmprestimos" minWidth="0.0" prefWidth="114.0" text="CPF" />
+            <TableColumn fx:id="colunaTituloEmprestimos" prefWidth="342.0" text="Título" />
+            <TableColumn fx:id="colunaQuantidadeEmprestimos" prefWidth="52.0" text="Qtd" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

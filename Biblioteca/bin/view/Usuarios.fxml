@@ -67,7 +67,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Pane layoutX="48.0" layoutY="179.0" prefHeight="317.0" prefWidth="282.0" style="-fx-border-color: grey;">
+      <Pane layoutX="48.0" layoutY="179.0" prefHeight="317.0" prefWidth="282.0" style="-fx-border-color: #9b4f96;">
          <children>
             <Text layoutX="13.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="71.859375">
                <font>
@@ -119,7 +119,7 @@
                </cursor></Button>
          </children>
       </Pane>
-      <TableView fx:id="tableUsuarios" layoutX="340.0" layoutY="179.0" prefHeight="317.0" prefWidth="577.0" style="-fx-background-color: #f8f8f8; -fx-border-color: grey;">
+      <TableView fx:id="tableUsuarios" layoutX="340.0" layoutY="179.0" prefHeight="317.0" prefWidth="577.0" style="-fx-border-color: #9b4f96;">
         <columns>
             <TableColumn fx:id="colunaId" prefWidth="35.0" text="id" />
           <TableColumn fx:id="colunaNome" prefWidth="134.0" text="Nome" />
