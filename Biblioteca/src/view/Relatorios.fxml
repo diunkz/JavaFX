@@ -74,10 +74,10 @@
       <TableView fx:id="tableUsuarios" layoutX="35.0" layoutY="123.0" prefHeight="133.0" prefWidth="880.0" style="-fx-border-color: #d40272;">
         <columns>
             <TableColumn fx:id="colunaIdUsuarios" prefWidth="35.0" text="id" />
-          <TableColumn fx:id="colunaNome" prefWidth="370.0" text="Nome" />
-          <TableColumn fx:id="colunaCpf" prefWidth="120.0" text="CPF" />
-            <TableColumn fx:id="colunaMatricula" minWidth="0.0" prefWidth="119.0" text="Matrícula" />
-            <TableColumn fx:id="colunaCurso" prefWidth="231.0" text="Curso" />
+          <TableColumn fx:id="colunaNome" prefWidth="299.0" text="Nome" />
+          <TableColumn fx:id="colunaCpf" prefWidth="148.0" text="CPF" />
+            <TableColumn fx:id="colunaMatricula" minWidth="0.0" prefWidth="132.0" text="Matrícula" />
+            <TableColumn fx:id="colunaCurso" prefWidth="245.0" text="Curso" />
         </columns>
       </TableView>
       <Text fill="#9b4f96" layoutX="33.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TÍTULOS:" textAlignment="CENTER" wrappingWidth="74.3896484375">
@@ -92,8 +92,8 @@
             <TableColumn fx:id="colunaEditora" prefWidth="127.0" text="Editora" />
             <TableColumn fx:id="colunaAutor" minWidth="0.0" prefWidth="128.0" text="Autor" />
             <TableColumn fx:id="colunaAno" prefWidth="50.0" text="Ano" />
-            <TableColumn fx:id="colunaDescricao" prefWidth="305.0" text="Descrição" />
-            <TableColumn fx:id="colunaQuantidade" prefWidth="54.0" text="Qtd" />
+            <TableColumn fx:id="colunaDescricao" prefWidth="281.0" text="Descrição" />
+            <TableColumn fx:id="colunaQuantidade" prefWidth="61.0" text="Qtd" />
          </columns>
       </TableView>
       <Text fill="#0037a6" layoutX="35.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPRÉSTIMOS:" textAlignment="CENTER" wrappingWidth="124.3896484375">
@@ -106,9 +106,14 @@
             <TableColumn fx:id="colunaIdEmprestimos" prefWidth="30.0" text="id" />
             <TableColumn fx:id="colunaNomeEmprestimos" prefWidth="338.0" text="Nome" />
             <TableColumn fx:id="colunacoCpfEmprestimos" minWidth="0.0" prefWidth="114.0" text="CPF" />
-            <TableColumn fx:id="colunaTituloEmprestimos" prefWidth="342.0" text="Título" />
-            <TableColumn fx:id="colunaQuantidadeEmprestimos" prefWidth="52.0" text="Qtd" />
+            <TableColumn fx:id="colunaTituloEmprestimos" prefWidth="312.0" text="Título" />
+            <TableColumn fx:id="colunaQuantidadeEmprestimos" prefWidth="65.0" text="Qtd" />
          </columns>
       </TableView>
+      <Button fx:id="atualizarRelatorios" layoutX="380.0" layoutY="605.0" mnemonicParsing="false" onAction="#btnAtualizarRelatorios" prefHeight="39.0" prefWidth="190.0" style="-fx-background-color: #9b4f96;" text="ATUALIZAR RELATÓRIOS" textFill="#ffffffed">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </Pane>

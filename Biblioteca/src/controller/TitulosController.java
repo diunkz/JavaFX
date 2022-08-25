@@ -241,9 +241,6 @@ public class TitulosController implements Initializable{
     
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-    	//Banco de dados interno precisa estar conectado
-//    	BancoDeDados bd = new BancoDeDados("admbiblioteca", "Biblioteca123");
-//    	bd.conecta();
     	titulosTable();
     }
 }

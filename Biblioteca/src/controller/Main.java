@@ -70,5 +70,6 @@ public class Main extends Application {
         launch(args);    	
         new UsuariosController();
         new TitulosController();
+        new RelatoriosController();
     }
 }
