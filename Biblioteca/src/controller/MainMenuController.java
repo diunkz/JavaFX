@@ -55,5 +55,4 @@ public class MainMenuController implements Initializable {
     	bd.conecta();
     }
 
-
 }

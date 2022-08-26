@@ -103,7 +103,7 @@ public class RelatoriosController{
     public void relatoriosTable() {
     	ObservableList<Usuario> usuarios = FXCollections.observableArrayList();
     	ObservableList<Titulo> titulos = FXCollections.observableArrayList();
-    	ObservableList<Emprestimo> relatorios = FXCollections.observableArrayList();
+    	ObservableList<Emprestimo> emprestimos = FXCollections.observableArrayList();
     	try {
     		PreparedStatement pst = BancoDeDados.getConexao().prepareStatement("select * from usuarios");
     		ResultSet rs = pst.executeQuery();
@@ -119,11 +119,11 @@ public class RelatoriosController{
     			titulos.add(new Titulo(rs.getInt("id"), rs.getString("titulo"), rs.getString("editora"), rs.getString("autor"), rs.getString("ano"), rs.getString("descricao"), rs.getInt("quantidade")));
     		}
     		
-    		pst = BancoDeDados.getConexao().prepareStatement("select * from emprestimo");
+    		pst = BancoDeDados.getConexao().prepareStatement("select * from emprestimos");
     		rs = pst.executeQuery();
     		
     		while(rs.next()) {
-    			relatorios.add(new Emprestimo(rs.getInt("id"), rs.getString("nome"), rs.getString("cpf"), rs.getString("titulo"),rs.getInt("quantidade")));
+    			emprestimos.add(new Emprestimo(rs.getInt("id"), rs.getString("nome"), rs.getString("cpf"), rs.getString("titulo"),rs.getInt("quantidade")));
     		}
     		
     		colunaIdUsuarios.setCellValueFactory(new PropertyValueFactory<>("id"));
@@ -150,6 +150,8 @@ public class RelatoriosController{
             colunaTituloEmprestimos.setCellValueFactory(new PropertyValueFactory<>("titulo"));
             colunaQuantidadeEmprestimos.setCellValueFactory(new PropertyValueFactory<>("quantidade"));
 //        	
+            tableEmprestimos.setItems(emprestimos);
+            
     	}catch(SQLException ex) {
     		Logger.getLogger(UsuariosController.class.getName()).log(Level.SEVERE, null, ex);
     	}

@@ -16,7 +16,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="949.0" style="-fx-background-color: #f8f8f8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <Text layoutX="151.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIBLIOTECA DA NASTHYA" textAlignment="CENTER" underline="true" wrappingWidth="649.5448608398438">
+      <Text layoutX="151.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIBLIOTECA" textAlignment="CENTER" underline="true" wrappingWidth="649.5448608398438">
          <font>
             <Font name="Mallanna" size="70.0" />
          </font>

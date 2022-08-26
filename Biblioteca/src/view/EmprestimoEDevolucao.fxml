@@ -68,7 +68,7 @@
       <Pane layoutX="156.0" layoutY="189.0" prefHeight="317.0" prefWidth="282.0" style="-fx-border-color: #9b4f96;">
          <children>
             <Text layoutX="13.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="52.39794921875" />
-            <TextField fx:id="nomeEmprestar" layoutX="98.0" layoutY="33.0" promptText="Nome">
+            <TextField fx:id="nomeEmprestar" disable="true" layoutX="98.0" layoutY="33.0">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></TextField>
@@ -87,19 +87,28 @@
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></TextField>
-            <Button fx:id="btnEmprestar" layoutX="85.0" layoutY="234.0" mnemonicParsing="false" onAction="#btnAdicionarUsuario" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #d40272;" text="Emprestar" textFill="white">
+            <Button fx:id="btnEmprestar" layoutX="85.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnEmprestarTitulo" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #d40272;" text="Emprestar" textFill="white">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <font>
                   <Font size="16.0" />
                </font></Button>
+            <Button fx:id="btnVerificarEmprestar" layoutX="216.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnVerificarCpfEmprestimo" prefHeight="15.0" prefWidth="52.0" style="-fx-background-color: #0037a6;" text="verificar" textFill="white">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Text fx:id="alertaEmprestar" fill="#d40272" layoutX="4.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="275.0" />
          </children>
       </Pane>
       <Pane layoutX="511.0" layoutY="189.0" prefHeight="317.0" prefWidth="282.0" style="-fx-border-color: #9b4f96;">
          <children>
             <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="44.859375" />
-            <TextField fx:id="nomeDevolver" layoutX="98.0" layoutY="33.0" promptText="Nome">
+            <TextField fx:id="nomeDevolver" disable="true" layoutX="98.0" layoutY="33.0">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
@@ -122,7 +131,7 @@
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <Button fx:id="btnDevolver" layoutX="94.0" layoutY="230.0" mnemonicParsing="false" onAction="#btnAtualizarUsuario" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #9b4f96;" text="Devolver" textFill="white">
+            <Button fx:id="btnDevolver" layoutX="86.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnDevolverTitulo" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #9b4f96;" text="Devolver" textFill="white">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -130,6 +139,15 @@
                   <Font size="16.0" />
                </font>
             </Button>
+            <Button fx:id="btnVerificarDevolver" layoutX="216.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnVerificarCpfDevolucao" prefHeight="15.0" prefWidth="52.0" style="-fx-background-color: #0037a6;" text="verificar" textFill="white">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Text fx:id="alertaDevolver" fill="#9b4f96" layoutX="4.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="275.0" />
          </children>
       </Pane>
    </children>

@@ -45,7 +45,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Text layoutX="151.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIBLIOTECA DA NASTHYA" textAlignment="CENTER" underline="true" wrappingWidth="649.5448608398438">
+      <Text layoutX="151.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIBLIOTECA" textAlignment="CENTER" underline="true" wrappingWidth="649.5448608398438">
          <font>
             <Font name="Mallanna" size="70.0" />
          </font>

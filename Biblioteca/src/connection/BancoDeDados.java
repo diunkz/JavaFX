@@ -4,7 +4,7 @@ import java.sql.*;
 import base.Usuario;
 
 public class BancoDeDados {
-	private static String url = "jdbc:mysql://localhost:3306/BibliotecaNasthya";
+	private static String url = "jdbc:mysql://localhost:3306/Biblioteca";
 	String user;
 	String pass;
 	public static Connection conexao = null;
@@ -54,6 +54,15 @@ public class BancoDeDados {
 			Statement st = getConexao().createStatement();
 			st.executeUpdate("SET @count = 0;");
 			st.executeUpdate("UPDATE `titulos` SET `titulos`.`id` = @count:= @count + 1;");			
+		}catch (SQLException e) {
+		}
+	}
+	
+	public static void atualizarIDsEmprestimos() {
+		try {
+			Statement st = getConexao().createStatement();
+			st.executeUpdate("SET @count = 0;");
+			st.executeUpdate("UPDATE `emprestimos` SET `emprestimos`.`id` = @count:= @count + 1;");			
 		}catch (SQLException e) {
 		}
 	}
