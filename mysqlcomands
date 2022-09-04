@@ -1,0 +1,39 @@
+sudo mysql
+CREATE DATABASE Biblioteca;
+
+USE Biblioteca;
+
+CREATE USER admbiblioteca@"localhost" IDENTIFIED BY 'Biblioteca123';
+GRANT ALL PRIVILEGES ON *.* TO admbiblioteca@"localhost" WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+mysql -u admbiblioteca -p
+
+USE BibliotecaNasthya;
+
+CREATE TABLE usuarios (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL, 
+    cpf VARCHAR(11) NOT NULL UNIQUE,
+    matricula VARCHAR(10) NOT NULL,
+    curso VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE titulos (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(50) NOT NULL, 
+    editora VARCHAR(50) NOT NULL,
+    autor VARCHAR(50) NOT NULL,
+    ano VARCHAR(4) NOT NULL,
+    descricao VARCHAR(100) NOT NULL,
+    quantidade INT NOT NULL
+);
+
+CREATE TABLE emprestimos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL UNIQUE, 
+    cpf VARCHAR(11) NOT NULL,
+    titulo VARCHAR(50) NOT NULL, 
+    quantidade INT NOT NULL
+);
+
